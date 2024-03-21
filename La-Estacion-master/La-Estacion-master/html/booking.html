@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorFusion</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global-styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <nav>
+        <div class="container">
+            <div class="nav__wrapper">
+                
+                <a href="index.html" class="logo">
+                    <div>
+                    <img src="https://logopond.com/logos/0a44956e49916699d98e7dcd905c6bf1.png" alt="La Estacion"/>
+                    </div>
+                </a>
+                <div class="nav__bar">
+                    <div class="nav__icon">
+                        <img src="../resources/images/menu.svg" alt="menu-icon">
+                    </div>
+                    <div class="nav__bg-overlay"></div>
+                    <ul class="nav__list">
+                        <div class="nav__close-icon">
+                            <img src="../resources/images/x.svg" alt="close-icon">
+                        </div>
+                        <div class="nav__list-wrapper">
+                            <div class="cont-logo">
+                                <img src="../resources/images/laestacion-png.png" alt="Logo">
+                            </div>
+                            <li>
+                                <a href="../index.html" class="nav__link">Home</a>
+                            </li>
+                            <li>
+                                <a href="./menu.html" class="nav__link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="./about.html" class="nav__link">About</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html" class="nav__link">Contact</a>
+                            </li>
+                            <li>
+                                <a href="./booking.html" class="btn primary-btn">Book Table</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- End of Nav Section -->
+
+<!-- Booking Section -->
+    <section id="form" data-aos="fade-up">
+        <div class="container">
+            <h3 class="form__title">Book Table</h3>
+            <div class="form__wrapper">
+                <form action="https://formspree.io/f/mpzbgprp" method="POST" id="my-form">
+                    <fieldset>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="table-type">Table Type</label>
+                        <select name="table-type" id="table-type">
+                            <option selected disabled>Choose</option>
+                            <option value="small">Small (2 persons)</option>
+                            <option value="medium">Medium (4 persons)</option>
+                            <option value="large">Large (6 persons)</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="guest-number">Guest Number</label>
+                        <input type="number" id="guest-number" name="guest-number" min="1" max="30" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="placement">Placement</label>
+                        <select name="placement" id="placement" required>
+                            <option selected disabled>Choose</option>
+                            <option value="front">Front</option>
+                            <option value="terraza norte">Right Gallery</option>
+                            <option value="patio">Patio</option>
+                            <option value="hall">Hall</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required >
+                    </fieldset>
+                    <fieldset>
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </fieldset>
+                    <fieldset class="form-group__full">
+                        <label for="note">Note</label>
+                        <textarea name="note" id="note" cols="30" rows="4"></textarea>
+                    </fieldset>
+                    <button type="submit" class="btn primary-btn">Send</button>
+                    <div class="status" id="status">
+                        <h3 class="status-title"></h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- End of Booking Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="col-1">
+                    <div class="footer__logo">
+                        <img src="https://logopond.com/logos/0a44956e49916699d98e7dcd905c6bf1.png" alt="">
+                    </div>
+                        <p class="footer__desc"> Eat Food and Be Happy!</p>
+                    <div class="footer__social"> 
+                        <h3 class="footer__social-title">Follow us</h3>
+                        <ul>
+                            <li class="footer__social-item footer__social-item-ig"><a href=""><img src="https://img.icons8.com/ios/50/000000/instagram-new.png"/></a>
+                            </li>
+                            <li class="footer__social-item footer__social-item-fb"><a href=""><img src="https://img.icons8.com/ios/50/000000/facebook--v1.png"/></a></li>
+                            <li class="footer__social-item footer__social-item-yt"><a href=""><img src="https://img.icons8.com/ios/50/000000/youtube-play--v1.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h3 class="footer__link-title">Links</h3>
+                    <ul class="footer__text">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contacts">Contact Us</a></li>
+                        <li><a href="#">Privacy & Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3 class="footer__link-title">Support</h3>
+                    <ul class="footer__text">
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="footer__link-title">Contact</h3>
+                    <ul class="footer__text">
+                        <li><a href="tel:+543525649133">+91 8828109231</a></li>
+                        <li><a href="surang: sarangsditiChmar@gmail.com">surangditiCh@gmail.com</a></li>
+                        <li><a href="#">Mumbai, India</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <div class="container">
+            <p class="copy-text">
+                © FlavorFusion, 2024. All rights reserved by La Estacion
+            </p>
+        </div>
+    </div>
+    <!-- End of Footer Section -->
+</body>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/form.js"></script>
+</html>
